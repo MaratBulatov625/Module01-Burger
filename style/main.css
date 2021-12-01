@@ -8,6 +8,9 @@ body {
     padding: 0 15px; /* засчет этого при уменьшении ширины экрана, сожержимое не будет прилипать к краям*/
 }
 
+header {
+    border-bottom: 1px solid #DEDEDE;
+}
 
 /* Header */
 .header {
@@ -42,6 +45,11 @@ body {
     color: #443737;
     text-decoration: none;
 }
+
+.header-nav a:hover {
+    color: #FFC725;
+}
+
 .header-nav a::after {
     content: "";
     width: 100%;
@@ -55,7 +63,6 @@ body {
     background: #FFC725;
 }
 
-
 .button {
     display: flex;
     align-items: center;
@@ -63,6 +70,7 @@ body {
     border: none;
     padding: 0;
     gap: 10px;
+    cursor: pointer;
 }
 
 .button-item {
@@ -99,18 +107,18 @@ body {
     background-size: cover;
     background-position: center center;
 
-    padding: 142px 0;
+    padding: 128px 0;
+    margin-bottom: 150px;
 }
 
 .breadcrumbs {
-    padding-left: 0;
-    margin-top: 0;
+    padding-left: 5px;
+    margin-top: 15px;
     list-style-type: none;
     display: flex;
     justify-content: center;
-    gap: 16px;
+    gap: 7px;
 }
-
 
 .breadcrumbs a {
     font-family: 'Open Sans', sans-serif;
@@ -119,10 +127,19 @@ body {
     text-decoration: none;
 }
 
+.breadcrumbs a:hover {
+    color: #FFC725;
+}
+
 .breadcrumbs a::before {
     content: "/";
     position: relative;
-    left: -7px;
+    left: -3px;
+    pointer-events: none;
+}
+
+.breadcrumbs a:hover::before {
+    color: #DEDEDE;
 }
 
 .breadcrumbs li:first-child a::before {
@@ -132,14 +149,71 @@ body {
 .title {
     font-size: 79px;
     font-weight: 700;
-    margin: 10px 0;
+    margin: 19px 0;
 }
 
 .description {
     font-family: 'Open Sans', sans-serif;
     font-size: 15px;
-    line-height: 1.5;
+    line-height: 1.6;
     color: #FAF9F9;
-    max-width: 300px;
+    max-width: 315px;
     margin: 0 auto;
+}
+
+/* Banner */
+.banner-box {
+    background-image: url(../img/banner.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    color: #FFFFFF;
+    padding: 100px;
+}
+
+.banner-title span{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+    background: #F37335;
+    padding: 4px 20px 5px 17px;
+    border-radius: 14px;
+
+    display: block;
+    max-width: 60px;
+    margin-bottom: 5px;
+}
+
+.banner-title {
+    font-size: 60px;
+    font-weight: 900;
+    margin-top: 3px;
+    margin-bottom: 10px;
+    color: #FFFFFF;
+}
+
+.banner-text {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    color: #FAF9F9;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    max-width: 308px;
+    
+}
+
+.banner-link {
+    padding: 21px 26px;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 700;
+    color: #1E2F40;
+
+    background-color: #FBB731;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 5px;
 }
