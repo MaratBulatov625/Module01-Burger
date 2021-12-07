@@ -116,13 +116,13 @@ header {
     background-size: cover;
     background-position: center center;
 
-    padding: 128px 0;
+    padding: 135px 0;
     margin-bottom: 150px;
 }
 
 .breadcrumbs {
     padding-left: 5px;
-    margin-top: 15px;
+    margin-top: 8px;
     list-style-type: none;
     display: flex;
     justify-content: center;
@@ -212,7 +212,7 @@ header {
     font-size: 15px;
     color: #FAF9F9;
     line-height: 1.6;
-    margin-bottom: 17px;
+    margin-bottom: 10px;
     max-width: 308px;
     
 }
