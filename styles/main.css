@@ -553,11 +553,11 @@ header {
 }
 .promo-left {
     background-image: url(../img/promo-left.png);
-    padding: 115px 52px;
+    padding: 115px 41px;
 }
 .promo-right {
     background-image: url(../img/promo-right.png);
-    padding: 102px 50px;
+    padding: 102px 39px;
 }
 .sale {
     font-size: 14px;
